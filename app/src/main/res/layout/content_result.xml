@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.sebastianstrus.hangmangame.ResultActivity"
+    tools:showIn="@layout/activity_result" >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result_text"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:id="@+id/result_text"
+        tools:textStyle="bold"
+        android:layout_marginTop="47dp"
+        android:layout_marginBottom="20sp"
+        android:textColor="#0288D1"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/guessed_word_text"
+        android:textSize="20sp"
+        android:id="@+id/result_message"
+        tools:textStyle="bold"
+        android:gravity="center"
+        android:layout_below="@+id/result_text"/>
+
+    <!-- guessed_word -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/word"
+        android:textSize="20sp"
+        android:id="@+id/word_text"
+        android:gravity="center"
+        tools:textStyle="bold"
+        android:layout_below="@+id/result_message"
+        android:textColor="#0288D1"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tries_text"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:id="@+id/result_message5"
+        tools:textStyle="bold"
+        android:layout_below="@+id/word_text"
+        android:layout_marginTop="20dp" />
+
+
+    <!-- android:id="@+id/tries_left_text" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tries_text"
+        android:text="10"
+        tools:textStyle="bold"
+        android:layout_below="@id/result_message5"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#0288D1"/>
+
+    <Button
+        android:text="@string/back_button_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/back_button"
+        android:layout_below="@+id/tries_text"
+        android:layout_marginTop="40dp"
+        android:onClick="go_back_button_pressed"
+        android:gravity="center"/>
+</RelativeLayout>
+
