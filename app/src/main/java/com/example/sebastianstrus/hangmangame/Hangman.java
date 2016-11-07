@@ -17,6 +17,7 @@ public class Hangman {
     private Random random;
     private int triesLeft;
     private char[] word;
+    private String abc;
 
 
     /**
