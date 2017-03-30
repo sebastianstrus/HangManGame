@@ -103,6 +103,7 @@ public class GameActivity extends AppCompatActivity {
         words.add("MARCUS");
         words.add("ANDROID");
         words.add("IPHONE");
+        words.add("EMILIA");
         return words;
     }
 
