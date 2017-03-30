@@ -141,42 +141,7 @@ public class GameActivity extends AppCompatActivity {
     private void refreshImage() {
         ImageView im = (ImageView) findViewById(R.id.image);
         im.setImageResource(getResources().getIdentifier("hang"+this.game.getTriesLeft(), "drawable", getPackageName()));
-        /*
-        switch (this.game.getTriesLeft()) {
-            case 10:
-                im.setImageResource(R.drawable.hang10);
-                break;
-            case 9:
-                im.setImageResource(R.drawable.hang9);
-                break;
-            case 8:
-                im.setImageResource(R.drawable.hang8);
-                break;
-            case 7:
-                im.setImageResource(R.drawable.hang7);
-                break;
-            case 6:
-                im.setImageResource(R.drawable.hang6);
-                break;
-            case 5:
-                im.setImageResource(R.drawable.hang5);
-                break;
-            case 4:
-                im.setImageResource(R.drawable.hang4);
-                break;
-            case 3:
-                im.setImageResource(R.drawable.hang3);
-                break;
-            case 2:
-                im.setImageResource(R.drawable.hang2);
-                break;
-            case 1:
-                im.setImageResource(R.drawable.hang1);
-                break;
-            case 0:
-                im.setImageResource(R.drawable.hang0);
-                break;
-        }*/
+
     }
     private void showResult(boolean won) {
         Intent intent = new Intent(this, ResultActivity.class);

@@ -12,7 +12,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.sebastianstrus.hangmangame.AboutActivity"
     tools:showIn="@layout/activity_about"
-    android:background="#BBBBBB">
+    android:background="@drawable/hangman_background">
 
     <TextView
         android:text="@string/about_hagnman"
@@ -20,7 +20,8 @@
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
         android:gravity="center"
-        android:textSize="14sp"/>
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"/>
 
     <Button
         android:text="@string/back_button_text"

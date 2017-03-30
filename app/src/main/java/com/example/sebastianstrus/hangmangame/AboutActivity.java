@@ -23,24 +23,4 @@ public class AboutActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-/*
-    class AboutActivity implements View.OnClickListener {
-        AboutActivity() {
-        }
-        public void onClick(View v) {
-            MainActivity.this.startActivity(new Intent(AboutActivity.this, MainActivity.class));
-        }
-    }*/
-/*
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(C0092R.menu.about, menu);
-        return true;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId() == C0092R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
 }
